@@ -1,8 +1,8 @@
 pipeline{
     agent any
 
-    stages{
-        stages('init'){
+    stages {
+        stage('init'){
             steps{
                 sh 'terraform init -no-color'
             }
